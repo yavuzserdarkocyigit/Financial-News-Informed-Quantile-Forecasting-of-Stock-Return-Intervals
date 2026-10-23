@@ -25,10 +25,10 @@ How much does financial news add to a stock's next-session return interval?
 This study compares a news-aware quantile Transformer with an otherwise identical model trained without news,
 using **456 U.S. stocks and SPY** over the **2020–2025** out-of-sample period.
 
-The model combines a **20-session market window** with **24 session-level news features** derived from
-firm-specific Benzinga articles. Separate market and news stems feed a shared Transformer, which predicts
-seven ordered quantiles of the next session's close-to-close log return. A stock-specific, past-only
-conformal-style calibration step then adjusts interval coverage.
+The model combines **20-session windows** of **21 market features** and **24 session-level news features**
+derived from firm-specific Benzinga articles. Separate market and news stems feed a shared Transformer, which
+predicts seven ordered quantiles of the next session's close-to-close log return. A stock-specific, past-only
+conformal-style calibration step then adjusts the interval bounds toward the nominal coverage.
 
 <p align="center">
   <img src="assets/architecture.png" alt="Two-stem quantile Transformer: market and news windows are fused, temporally encoded, and mapped to ordered quantiles before past-only calibration." width="100%">
