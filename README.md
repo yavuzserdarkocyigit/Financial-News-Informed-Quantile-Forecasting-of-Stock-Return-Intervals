@@ -102,13 +102,3 @@ Final model: d = 96, 3 encoder layers, 4 heads, dropout 0.10, 363,527 parameters
 
 The code is released under the [MIT License](LICENSE). The license does not cover the Benzinga articles
 or anything derived from them, which remain subject to Benzinga's terms.
-
-## Citation
-
-```bibtex
-@article{kocyigit_news_quantile_intervals,
-  title   = {Financial News-Informed Quantile Forecasting of Stock Return Intervals},
-  author  = {Ko{\c{c}}yi{\u{g}}it, Yavuz Serdar and Karadeniz, {\.I}lknur and Y{\i}ld{\i}z, Olcay Taner},
-  note    = {Under review}
-}
-```
