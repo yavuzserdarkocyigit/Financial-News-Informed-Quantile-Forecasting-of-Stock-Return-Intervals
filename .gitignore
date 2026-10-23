@@ -1,0 +1,12 @@
+# licensed or derived data: never commit
+data/*
+!data/README.md
+!data/tickers.txt
+!data/llm_tickers.txt
+artifacts/
+
+# local
+__pycache__/
+*.pyc
+.env
+*key*.txt

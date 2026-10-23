@@ -1,0 +1,9 @@
+# tested with Python 3.10
+torch==2.5.1
+numpy==1.26.4
+pandas==2.2.3
+pyarrow==23.0.1
+matplotlib==3.8.4
+# data collection and the LLM baseline only
+transformers==5.8.1
+yfinance==0.2.66
