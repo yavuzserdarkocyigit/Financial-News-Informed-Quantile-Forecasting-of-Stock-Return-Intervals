@@ -1,11 +1,7 @@
 """Benzinga articles per ticker from a licensed Benzinga news API, one JSONL file per year.
 
-    GET <BENZINGA_API_URL>?tickers=<TICKER>&published.gte=...&published.lte=...
-    Authorization: Bearer <BENZINGA_API_KEY>; pages are followed through response['next_url'].
-
-The endpoint and key of your Benzinga news subscription are read from the environment variables
-BENZINGA_API_URL and BENZINGA_API_KEY. Existing year files are skipped, so an interrupted download can be
-resumed. The articles are licensed and must not be redistributed.
+Existing year files are skipped, so an interrupted download can be
+resumed.
 
 Usage:
     python src/data_collection/benzinga.py --tickers-file data/tickers.txt
